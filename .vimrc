@@ -36,22 +36,31 @@
 "    INSTRUCCIONES:
 "    $ ln -s ~/.config/nvim/.vimrc ~/.vimrc
 "    $ ln -s ~/.config/nvim/.vim ~/.vim
-" 
+"  
+" 5. Instalar los plugin para darle una mejor apariencia, sigan las
+"    instruciones de instalacion en la pagina ofical del pluging's
+"    https://github.com/junegunn/vim-plug
 "
-set number
-set mouse=a
-set numberwidth=1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" USER INTERFACE OPTIONS
+
+set number				" Show line numbers on the sidebar
+set mouse=a				" Enable mouse for scrolling and resizing
+set numberwidth=1			" Show existing tab with 4 spaces width.
 set clipboard=unnamed
-syntax on
+syntax on				" Enable syntax highlighting
 set showcmd
-set ruler
-set cursorline
-set encoding=utf-8
+set ruler				" Always show cursor position
+set cursorline				" Highlight the line currently under cursor
+set encoding=utf-8			" Use an encoding that supports Unicode	
 set showmatch
 set sw=2
-set relativenumber
-set laststatus=2
+set relativenumber			" Show line number on the current line and relative numbers on all other
+					" lines. Works only if the option above (number) is enabled.
+set laststatus=2			" Always display the status bar
 set noshowmode
+set title				" Set the window’s title, reflecting the file currently being edited.
 
 so ~/.vim/plugins.vim
 "so ~/.vim/plugin-config.vim
