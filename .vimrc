@@ -7,12 +7,20 @@
 "											"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 			BIENVEDIDOS
-" -> REQUICITO PARA PERZONALIZAR NUESTRO VIM Y NEOVIM
+" -> REQUICITO PARA PERZONALIZAR NUESTRO VIM Y NEOVIM PARA QUE ESTO FUNCIONE
 "  * Siguan las indicaciones|
-"  1. Instalar GIT en nuetro equipo 
+"  1. Instalar GIT, nodejs la mas reciente LF, ...
 "  	https://git-scm.com/download/linux
-"  	
+"  	https://github.com/gokcehan/lf/wiki/Tutorial
+"  	https://github.com/nodesource/distributions/blob/master/README.md#debinstall
+"	
+"	NOTA:Installation instructions- puede varias la instlacion
 "  	$ sudo apt-get install git
+"  	* Using Ubuntu
+"	$ curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+"	$ sudo apt-get install -y nodejs
+"
+"
 "  
 "  2. Instalar vim y neovim 
 "  	https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable
@@ -61,14 +69,20 @@ set relativenumber			" Show line number on the current line and relative numbers
 set laststatus=2			" Always display the status bar
 set noshowmode
 set title				" Set the window’s title, reflecting the file currently being edited.
+set termguicolors 
+hi Cursor guifg=green guibg=green
+hi Cursor2 guifg=red guibg=red
+set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
 
 so ~/.vim/plugins.vim
-"so ~/.vim/plugin-config.vim
-"so ~/.vim/maps.vim
+so ~/.vim/plugin-config.vim
+so ~/.vim/maps.vim
 
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "dark"
 highlight Normal ctermbg=NONE
+
+
 
 "au BufNewFile,BufRead *.html set filetype=htmldjango
 "lua require'colorizer'.setup()

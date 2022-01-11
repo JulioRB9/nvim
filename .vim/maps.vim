@@ -4,10 +4,14 @@ let mapleader=" "
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
 
+"===========ATAJO DE TECLADO Lf========================================= 
+map <leader>f :Lf<CR>
+
 "-----------------------------------------------------------------------
 " Atajos de guardado y salida
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
 
 " ---------------------------------------------------------------------
 "  ==================== ATAJO DE TECLADO COC   ========================

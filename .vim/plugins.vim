@@ -17,14 +17,15 @@ Plug 'vim-airline/vim-airline-themes'
 " IDE
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
-"Plug 'christoomey/vim-tmux-navigator'
-"Plug 'vim-python/python-syntax'
-"Plug 'ptzz/lf.vim'
-"Plug 'rbgrouleff/bclose.vim'
+Plug 'vim-python/python-syntax'
+Plug 'voldikss/vim-floaterm'
+Plug 'ptzz/lf.vim'
+Plug 'voldikss/vim-floaterm'
+Plug 'rbgrouleff/bclose.vim'
 
 " Autocompletado
 " Use release branch (recommend)
-"Plug 'neoclide/coc.nvim'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
