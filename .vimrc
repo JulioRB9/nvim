@@ -79,7 +79,7 @@ so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
 colorscheme gruvbox
-let g:gruvbox_contrast_dark = "dark"
+let g:gruvbox_contrast_dark = "hard"
 highlight Normal ctermbg=NONE
 
 
@@ -89,7 +89,7 @@ highlight Normal ctermbg=NONE
 
 "" Searching
 "set hlsearch                    " highlight matches
-"set incsearch                   " incremental searching
+set incsearch                   " incremental searching
 "set ignorecase                  " searches are case insensitive...
 "set smartcase                   " ... unless they contain at least one capital letter
 
