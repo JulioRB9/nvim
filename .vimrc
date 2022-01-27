@@ -50,7 +50,8 @@
 "    https://github.com/junegunn/vim-plug
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
+"  "https://github.com/ryanoasis/vim-devicons/wiki/Installation
+
 " USER INTERFACE OPTIONS
 
 set number				" Show line numbers on the sidebar
@@ -61,7 +62,7 @@ syntax on				" Enable syntax highlighting
 set showcmd
 set ruler				" Always show cursor position
 set cursorline				" Highlight the line currently under cursor
-set encoding=utf-8			" Use an encoding that supports Unicode	
+set encoding=utf8			" Use an encoding that supports Unicode	
 set showmatch
 set sw=2
 set relativenumber			" Show line number on the current line and relative numbers on all other
@@ -69,10 +70,10 @@ set relativenumber			" Show line number on the current line and relative numbers
 set laststatus=2			" Always display the status bar
 set noshowmode
 set title				" Set the window’s title, reflecting the file currently being edited.
-set termguicolors 
+set termguicolors
+set guifont=DroidSansMono\ Nerd\ Font\ 11
 hi Cursor guifg=green guibg=green
 hi Cursor2 guifg=red guibg=red
-set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
@@ -93,3 +94,6 @@ set incsearch                   " incremental searching
 "set ignorecase                  " searches are case insensitive...
 "set smartcase                   " ... unless they contain at least one capital letter
 
+if exists("g:loaded_webdevicons")
+  call webdevicons#refresh()
+endif

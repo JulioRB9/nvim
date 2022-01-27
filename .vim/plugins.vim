@@ -15,13 +15,16 @@ Plug 'vim-airline/vim-airline-themes'
 
 
 " IDE
-Plug 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion' 
 Plug 'scrooloose/nerdtree'
 Plug 'vim-python/python-syntax'
 Plug 'voldikss/vim-floaterm'
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'rbgrouleff/bclose.vim'
+
+" Iconos
+Plug 'ryanoasis/vim-devicons'
 
 " Autocompletado
 " Use release branch (recommend)
