@@ -1,0 +1,10 @@
+Instrucciones para agregar iconos en nuetra configuracion de VIM
+
+1. Ingresar en la pagina oficial de nerd fonts
+   https://www.nerdfonts.com/
+
+2- Cambiar el tema de vim es sencillo igresa tu vim y con el ctrl + : 
+  :colorsheme Theme 
+
+  
+  
