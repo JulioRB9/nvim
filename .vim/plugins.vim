@@ -26,6 +26,15 @@ Plug 'rbgrouleff/bclose.vim'
 " Iconos
 Plug 'ryanoasis/vim-devicons'
 
+" Plugin options
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+
 " Autocompletado
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim'

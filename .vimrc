@@ -32,7 +32,7 @@
 "	$ sudo apt-get install vim
 " 
 " 3. Clonar repositorio 
-" 	$ git clone https://github.com/JULIOR1V3R4/nvim.git 
+" 	$ git clone https://github.com/AventuraJr/nvim.git 
 "
 " 4. Crear los enlaces simbolico para poder brindar nuestro soporte a nuetra propias
 "    configuracion.
@@ -62,7 +62,7 @@ syntax on				" Enable syntax highlighting
 set showcmd
 set ruler				" Always show cursor position
 set cursorline				" Highlight the line currently under cursor
-set encoding=utf8			" Use an encoding that supports Unicode	
+set encoding=utf-8			" Use an encoding that supports Unicode	
 set showmatch
 set sw=2
 set relativenumber			" Show line number on the current line and relative numbers on all other
