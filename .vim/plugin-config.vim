@@ -15,6 +15,7 @@ let g:airline_extensions = []
 " ============= Setting VimDevIcons ===============================
 let g:webdevicons_enable = 1					" loading the plugin
 let g:WebDevIconsOS = 'Darwin'
+let g:webdevicons_conceal_nerdtree_brackets = 1			" whether or not to show the nerdtree brackets around flags
 "let g:webdevicons_enable_nerdtree = 1				" adding the flags to NERDTree
 "let g:webdevicons_enable_unite = 1				" adding the custom source to unite
 "let g:webdevicons_enable_vimfiler = 1				" adding the column to vimfiler

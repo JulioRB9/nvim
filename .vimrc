@@ -70,19 +70,16 @@ set relativenumber			" Show line number on the current line and relative numbers
 set laststatus=2			" Always display the status bar
 set noshowmode
 set title				" Set the window’s title, reflecting the file currently being edited.
-set termguicolors
-set guifont=DroidSansMono\ Nerd\ Font\ 11
-hi Cursor guifg=green guibg=green
-hi Cursor2 guifg=red guibg=red
+set termguicolors     			" enable true colors support
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
-highlight Normal ctermbg=NONE
 
+let ayucolor="mirage" 			" for mirage ve frsion of theme
+"let g:gruvbox_contrast_dark = "hard"
+colorscheme ayu
 
 
 "au BufNewFile,BufRead *.html set filetype=htmldjango
