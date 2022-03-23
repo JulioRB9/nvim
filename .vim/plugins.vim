@@ -12,7 +12,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ayu-theme/ayu-vim' " or other package manager
  
 
 
@@ -26,7 +25,8 @@ Plug 'voldikss/vim-floaterm'
 Plug 'rbgrouleff/bclose.vim'
 
 " Iconos
-Plug 'ryanoasis/vim-devicons'
+
+
 
 " Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }

@@ -32,7 +32,7 @@
 "	$ sudo apt-get install vim
 " 
 " 3. Clonar repositorio 
-" 	$ git clone https://github.com/AventuraJr/nvim.git 
+
 "
 " 4. Crear los enlaces simbolico para poder brindar nuestro soporte a nuetra propias
 "    configuracion.
@@ -71,15 +71,16 @@ set laststatus=2			" Always display the status bar
 set noshowmode
 set title				" Set the window’s title, reflecting the file currently being edited.
 set termguicolors     			" enable true colors support
-
+set guifont=DroidSansMono\ Nerd\ Font\ 11 " Set Vim font to a Nerd Font
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
 
-let ayucolor="mirage" 			" for mirage ve frsion of theme
+"let ayucolor="mirage" 			" for mirage ve frsion of theme
 "let g:gruvbox_contrast_dark = "hard"
-colorscheme ayu
+let g:gruvbox_transparent_bg = 1
+colorscheme gruvbox
 
 
 "au BufNewFile,BufRead *.html set filetype=htmldjango
