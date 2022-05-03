@@ -28,9 +28,9 @@ let g:lf_command_override = 'lf -command "set hidden"'		"
 
 " ================ SETTING  KITE   =====================
 " https://github.com/kiteco/vim-plugin
-let g:kite_supported_languages = [] 				" Turn off Kite
-let g:kite_supported_languages = ['*']				" All the languages Kite supports 
-let g:kite_supported_languages = ['python', 'go']	" Python , JavaScript, Go
+"let g:kite_supported_languages = [] 				" Turn off Kite
+"let g:kite_supported_languages = ['*']				" All the languages Kite supports 
+"let g:kite_supported_languages = ['python', 'go']	" Python , JavaScript, Go
 
 
 " -----------------------------------------------------------------------

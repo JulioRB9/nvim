@@ -24,6 +24,8 @@ Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'rbgrouleff/bclose.vim'
 
+" Server live brawer
+Plug 'turbio/bracey.vim'
 " Iconos
 
 

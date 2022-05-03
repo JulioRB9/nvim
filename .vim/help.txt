@@ -1,10 +1,27 @@
-Instrucciones para agregar iconos en nuetra configuracion de VIM
+		INGREDIENTE
+===================================================
+-> vim-plug - A minimalist Vim Plugin manager
+-> nvim-lspconfig - LSP configurations
+-> nvim-treesitter - Treesitter configuration
+-> completion-nvim - An LSP-based auto completion
+-> lspsaga.vim -A LSP user inteface Plugin
+-> telescope.nvim -  A fuzzy finder over  list
+-> lualine.nvim - A statusline written in Lua
 
-1. Ingresar en la pagina oficial de nerd fonts
-   https://www.nerdfonts.com/
+==================================================
 
-2- Cambiar el tema de vim es sencillo igresa tu vim y con el ctrl + : 
-  :colorsheme Theme 
+	    DIRECTORIRY STRUCTURE
+
+
+$HOME/.config/
+|--nvim
+    |--init.vim  	# Root config file
+    |--macos.vim	# macOs-Specific config
+    |--maps.vim		# Keymap
+    |--plug.vim		# Vim-plug config 
+    |--after		# Post-init script 
+    |    |--plugin/	# Plugin configs
+    |--colors/		# Color Themes
 
   
   

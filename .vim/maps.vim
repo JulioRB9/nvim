@@ -16,6 +16,7 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
 
+
 " ---------------------------------------------------------------------
 "  ==================== ATAJO DE TECLADO COC   ========================
 " Remap keys for gotos
