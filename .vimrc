@@ -71,24 +71,24 @@ set laststatus=2			" Always display the status bar
 set noshowmode
 set title				" Set the window’s title, reflecting the file currently being edited.
 set termguicolors     			" enable true colors support
-set guifont=DroidSansMono\ Nerd\ Font\ 11 " Set Vim font to a Nerd Font
-so ~/.vim/plugins.vim
-so ~/.vim/plugin-config.vim
-so ~/.vim/maps.vim
+" set guifont=DroidSansMono\ Nerd\ Font\ 11 " Set Vim font to a Nerd Font
+" so ~/.vim/plugins.vim
+" so ~/.vim/plugin-config.vim
+" so ~/.vim/maps.vim
 
 
-"let ayucolor="mirage" 			" for mirage ve frsion of theme
-"let g:gruvbox_contrast_dark = "hard"
-let g:gruvbox_transparent_bg = 1
-colorscheme gruvbox
+" let ayucolor="mirage" 			" for mirage ve frsion of theme
+" let g:gruvbox_contrast_dark = "hard"
+" let g:gruvbox_transparent_bg = 1
+" colorscheme gruvbox
 
 
 "au BufNewFile,BufRead *.html set filetype=htmldjango
 "lua require'colorizer'.setup()
 
-"" Searching
+" Searching
 "set hlsearch                    " highlight matches
-set incsearch                   " incremental searching
+"set incsearch                   " incremental searching
 "set ignorecase                  " searches are case insensitive...
 "set smartcase                   " ... unless they contain at least one capital letter
 
