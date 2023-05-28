@@ -7,18 +7,26 @@ La configuracion de Vim puede ser un poco frustrante en un inicio, pero despues 
 
 ## Bienvenidos "Soy Novato".
 
-##Pasos para instalar y configurar Vim y Neovim
+## Pasos para instalar y configurar Vim y Neovim
 
 Estoy haciendo todo lo posible creando una documentacion paso a paso, que sea posible que cualquier novato pueda entender  que esta iniciando probar vim o neovim 
 
 ### Instruciones 
-1. Instalar vim y neovim en nuetro equipo 
+1. Instalar vim y neovim en nuetro equipo
+
 **Nota**: Neovim tiene que ser version estable
 
-Acepta terminos en la terminal para isntalar los paquetes que contiene las dependencia del editor
+Acepta terminos en la terminal para instalar los paquetes que contiene las dependencia del editor
 ```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get dist-grade
 $ sudo apt-get install vim
+```
+[link] Neovim stable [https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable]
+
+```bash
+$ sudo add-apt-repository ppa:neovim-ppa/stable
+$ sudo apt update
+$ sudo apt-get install neovim
 ```
