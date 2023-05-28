@@ -1,97 +1,88 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"	 ____  _____ _____ _____ ___ _   _  ____  	 _   ___     _____ __  __ 	"
-"	/ ___|| ____|_   _|_   _|_ _| \ | |/ ___| 	| \ | \ \   / /_ _|  \/  |	"
-"	\___ \|  _|   | |   | |  | ||  \| | |  _  	|  \| |\ \ / / | || |\/| |	"
-"	 ___) | |___  | |   | |  | || |\  | |_| | 	| |\  | \ V /  | || |  | |	"
-"	|____/|_____| |_|   |_| |___|_| \_|\____| 	|_| \_|  \_/  |___|_|  |_|	"
-"											"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 			BIENVEDIDOS
-" -> REQUICITO PARA PERZONALIZAR NUESTRO VIM Y NEOVIM PARA QUE ESTO FUNCIONE
-"  * Siguan las indicaciones|
-"  1. Instalar GIT, nodejs la mas reciente LF, ...
-"  	https://git-scm.com/download/linux
-"  	https://github.com/gokcehan/lf/wiki/Tutorial
-"  	https://github.com/nodesource/distributions/blob/master/README.md#debinstall
-"	
-"	NOTA:Installation instructions- puede varias la instlacion
-"  	$ sudo apt-get install git
-"  	* Using Ubuntu
-"	$ curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-"	$ sudo apt-get install -y nodejs
-"
-"
-"  
-"  2. Instalar vim y neovim 
-"  	https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable
-"  	https://github.com/neovim/neovim/wiki/Installing-Neovim
-"	
-"	$ sudo add-apt-repository ppa:neovim-ppa/stable
-"	$ sudo apt-get update
-"	$ sudo apt-get install neovim
-"	$ sudo apt-get install vim
-" 
-" 3. Clonar repositorio 
-
-"
-" 4. Crear los enlaces simbolico para poder brindar nuestro soporte a nuetra propias
-"    configuracion.
-"    NOTA: Si tiene previo algunos archivos y directorio que se crea la
-"    instalar vim y neovim, es necesario realizar un respaldo del archivo y
-"    despues eliminarlo para poder crear nuetro enlace simbolicos, de forma
-"    que no debe crer conflitos.
-"
-"    INSTRUCCIONES:
-"    $ ln -s ~/.config/nvim/.vimrc ~/.vimrc
-"    $ ln -s ~/.config/nvim/.vim ~/.vim
-"  
-" 5. Instalar los plugin para darle una mejor apariencia, sigan las
-"    instruciones de instalacion en la pagina ofical del pluging's
-"    https://github.com/junegunn/vim-plug
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"  "https://github.com/ryanoasis/vim-devicons/wiki/Installation
-
-" USER INTERFACE OPTIONS
-
-set number				" Show line numbers on the sidebar
-set mouse=a				" Enable mouse for scrolling and resizing
-set numberwidth=1			" Show existing tab with 4 spaces width.
+set number
+set mouse=a
+set numberwidth=1
 set clipboard=unnamed
-syntax on				" Enable syntax highlighting
+syntax enable
 set showcmd
-set ruler				" Always show cursor position
-set cursorline				" Highlight the line currently under cursor
-set encoding=utf-8			" Use an encoding that supports Unicode	
+set ruler
+set cursorline
+set encoding=utf-8
 set showmatch
 set sw=2
-set relativenumber			" Show line number on the current line and relative numbers on all other
-					" lines. Works only if the option above (number) is enabled.
-set laststatus=2			" Always display the status bar
+set relativenumber
+set laststatus=2
 set noshowmode
-set title				" Set the window’s title, reflecting the file currently being edited.
-set termguicolors     			" enable true colors support
-" set guifont=DroidSansMono\ Nerd\ Font\ 11 " Set Vim font to a Nerd Font
-" so ~/.vim/plugins.vim
-" so ~/.vim/plugin-config.vim
-" so ~/.vim/maps.vim
+set termguicolors
+
+call plug#begin('~/.vim/plugged')
+ 
+" Temas
+Plug 'morhetz/gruvbox'
+" IDE
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'vim-python/python-syntax'
+Plug 'ptzz/lf.vim'
+Plug 'rbgrouleff/bclose.vim'
+" -------------------------------------------------------------------------
+" Autocompletado
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+
+let g:airline_theme = "github"
+let g:lightline = { 'colorscheme': 'github' }
+"let g:indentLine_char = '┊'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 1 " (default: 2)
+" -------------------------------------------------------------------------
+" ================== colorscheme gruvbox =================================
+let g:gruvbox_contrast_dark = "hard"
+let NERDTreeQuitOnOpen=1
+let mapleader=" "
+let g:python_highlight_all = 1
+
+" ------------------------------------------------------------------------
+" ================ SETTING  KITE   =====================
+" https://github.com/kiteco/vim-plugin
+
+" Python, JavaScript, Go
+let g:kite_supported_languages = ['python', 'javascript']
+
+" -----------------------------------------------------------------------
+"  =============== SETTING COC =========================
+"
+autocmd FileType python let b:coc_suggest_disable = 1
+autocmd FileType javascript let b:coc_suggest_disable = 1 
+autocmd FileType scss setl iskeyword+=@-@
 
 
-" let ayucolor="mirage" 			" for mirage ve frsion of theme
-" let g:gruvbox_contrast_dark = "hard"
-" let g:gruvbox_transparent_bg = 1
-" colorscheme gruvbox
+"------------------------------------------------------------------------
+" ========= Navegation file ============================================
+nmap <Leader>s <Plug>(easymotion-s2)
+nmap <Leader>nt :NERDTreeFind<CR>
 
+"-----------------------------------------------------------------------
+" Atajos de guardado y salida
+nmap <Leader>w :w<CR>
+nmap <Leader>q :q<CR>
 
-"au BufNewFile,BufRead *.html set filetype=htmldjango
-"lua require'colorizer'.setup()
-
-" Searching
-"set hlsearch                    " highlight matches
-"set incsearch                   " incremental searching
-"set ignorecase                  " searches are case insensitive...
-"set smartcase                   " ... unless they contain at least one capital letter
-
-if exists("g:loaded_webdevicons")
-  call webdevicons#refresh()
-endif
+" ---------------------------------------------------------------------
+"  ==================== ATAJO DE TECLADO COC   ========================
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+"  ---------------------------------------------------------------------
+"  ==================== CONDICION DE LOS AUTOCOMPLETADO ================
+" Us <c-space> to trigger completion.
+if &filetype == "javascript" || &filetype == "python"
+  inoremap <c-space> <C-x><C-u>
+else
+  inoremap <silent><expr> <c-space> coc#refresh()
+endif 
