@@ -32,3 +32,5 @@ $ sudo apt-get install neovim
 ```
 
 2. Instalar Plugin
+
+vim-plug [link](https://github.com/junegunn/vim-plug)
