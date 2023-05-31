@@ -23,7 +23,7 @@ $ sudo apt-get upgrade
 $ sudo apt-get dist-upgrade
 $ sudo apt-get install vim
 ```
-[link] [https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable]
+[Respositorio de Neovim Estable] (https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable)
 
 ```bash
 $ sudo add-apt-repository ppa:neovim-ppa/stable
@@ -33,4 +33,4 @@ $ sudo apt-get install neovim
 
 2. Instalar Plugin
 
-vim-plug [link](https://github.com/junegunn/vim-plug)
+vim-plug  [ir link](https://github.com/junegunn/vim-plug)
