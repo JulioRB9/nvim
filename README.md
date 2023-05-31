@@ -20,7 +20,7 @@ Acepta terminos en la terminal para instalar los paquetes que contiene las depen
 ```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ sudo apt-get dist-grade
+$ sudo apt-get dist-upgrade
 $ sudo apt-get install vim
 ```
 [link] [https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable]
