@@ -30,3 +30,5 @@ $ sudo add-apt-repository ppa:neovim-ppa/stable
 $ sudo apt update
 $ sudo apt-get install neovim
 ```
+
+2. Instalar Plugin
