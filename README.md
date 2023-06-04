@@ -12,7 +12,7 @@ La configuracion de Vim puede ser un poco frustrante en un inicio, pero despues 
 Estoy haciendo todo lo posible creando una documentacion paso a paso, que sea posible que cualquier novato pueda entender  que esta iniciando probar vim o neovim 
 
 ### Instruciones 
-1. Instalar vim y neovim en nuetro equipo
+1. Instalar vim y neovim en nuetro sistema linux
 
 **Nota**: Neovim tiene que ser version estable
 
@@ -31,11 +31,11 @@ $ sudo apt update
 $ sudo apt-get install neovim
 ```
 
-2. Instalar Plugin
+2. Instalar Plugin, el que nos permitira instalar los temas y mas plugin que necesitemos agregar en nuetro editor de forma mas automatizado y mas.
 
 vim-plug  [ir link](https://github.com/junegunn/vim-plug)
 
-3. Instalar NedoJs, seguir las instrucciones de la pagina oficial, despues vuelven al este instrucion para seguir con el siguiente paso
+3. Instalar NedoJs, seguir las instrucciones de la pagina oficial, despues vuelven a este instrucion para seguir con el siguiente paso
 
 NodeJr [ir link](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 
