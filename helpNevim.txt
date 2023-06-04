@@ -29,4 +29,9 @@ highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode
 
+"" Searching 
+set hlsearch
+set incsearch
+set smartcase
+
 

@@ -34,3 +34,9 @@ $ sudo apt-get install neovim
 2. Instalar Plugin
 
 vim-plug  [ir link](https://github.com/junegunn/vim-plug)
+
+3. Instalar NedoJs, seguir las instrucciones de la pagina oficial, despues vuelven al este instrucion para seguir con el siguiente paso
+
+NodeJr [ir link](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
+
+
