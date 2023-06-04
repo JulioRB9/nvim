@@ -23,7 +23,7 @@ $ sudo apt-get upgrade
 $ sudo apt-get dist-upgrade
 $ sudo apt-get install vim
 ```
-[Respositorio de Neovim Estable](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable)
+[Ir Link](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable) Respositorio de Neovim Estable
 
 ```bash
 $ sudo add-apt-repository ppa:neovim-ppa/stable
@@ -33,10 +33,10 @@ $ sudo apt-get install neovim
 
 2. Instalar Plugin, el que nos permitira instalar los temas y mas plugin que necesitemos agregar en nuetro editor de forma mas automatizado y mas.
 
-vim-plug  [ir link](https://github.com/junegunn/vim-plug)
+[Ir Link](https://github.com/junegunn/vim-plug) vim-plug
 
 3. Instalar NedoJs, seguir las instrucciones de la pagina oficial, despues vuelven a este instrucion para seguir con el siguiente paso
 
-NodeJr [ir link](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
+[Ir Link](https://github.com/nodesource/distributions/blob/master/README.md#debinstall) NodeJr
 
 
