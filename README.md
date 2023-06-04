@@ -23,7 +23,7 @@ $ sudo apt-get upgrade
 $ sudo apt-get dist-upgrade
 $ sudo apt-get install vim
 ```
-[Ir Link](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable) Respositorio de Neovim Estable
+[Ir Link](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable) Respositorio Neovim Estable
 
 ```bash
 $ sudo add-apt-repository ppa:neovim-ppa/stable
