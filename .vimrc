@@ -1,3 +1,4 @@
+" 1. Habilitar funciones de Vim, ya que por default esta deshabilitado.
 set number
 set mouse=a
 set numberwidth=1
@@ -12,9 +13,10 @@ set sw=2
 set relativenumber
 set termguicolors
 
-" ===============================================
+
+" 2. Enlazar las carpetas de Plugin y mapeo de teclado.
 call plug#begin('~/.vim/plugged')
- 
+
 " Temas
 Plug 'morhetz/gruvbox'
 " IDE
