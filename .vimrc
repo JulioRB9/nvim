@@ -6,14 +6,13 @@ syntax enable
 set showcmd
 set ruler
 set cursorline
-set encoding=utf-8
+set encoding=UTF-8
 set showmatch
 set sw=2
 set relativenumber
-set laststatus=2
-set noshowmode
 set termguicolors
 
+" ===============================================
 call plug#begin('~/.vim/plugged')
  
 " Temas
