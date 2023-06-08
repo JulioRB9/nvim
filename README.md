@@ -52,7 +52,19 @@ $ git clone git@github.com:ISEATO-JR/nvim.git
 ```
 Ejemplo: 
 ```bash
+linux@jr:~/.config/nvim$ tree -a
+.
+├── init.vim
+├── README.md
+├── .README.md.swp
+├── .vim
+│   ├── help.txt
+│   ├── maps.vim
+│   ├── plugin-config.vim
+│   └── plugins.vim
+└── .vimrc
 
+35 directories, 54 files
 ```
 5. Enlazar las carpetas donde contiene los archivos de configuracion de plugin  y el mapeo de nuestro mapeo de teclado fisico.
 
