@@ -44,4 +44,17 @@ $ sudo apt-get install neovim
 
 [Ir Link](https://github.com/nodesource/distributions/blob/master/README.md#debinstall) NodeJr
 
+4. Procedemos clonar el este repositorio en el siguiente directorio de nuestro sistema linux, sigan esta indicaciones.
 
+```bash
+$ cd ~/.confg/
+$ git clone git@github.com:ISEATO-JR/nvim.git
+```
+Ejemplo: 
+```bash
+linux@jr:~/.config/nvim$ tree
+.
+├── helpNevim.txt
+├── init.vim
+└── README.md
+```
