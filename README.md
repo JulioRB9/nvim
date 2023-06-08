@@ -25,13 +25,18 @@ $ sudo apt-get install vim
 ```
 [Ir Link](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable) Respositorio Neovim Estable
 
+Si quieres añadir un nuevo repositorio PPA, tendras que usar el siguiente comando, en este caso lo usaremos
+
+```sh
+sudo apt-get install software-properties-common
+```
 ```bash
 $ sudo add-apt-repository ppa:neovim-ppa/stable
 $ sudo apt update
 $ sudo apt-get install neovim
 ```
 
-2. Instalar Plugin, el que nos permitira instalar los temas y mas plugin que necesitemos agregar en nuetro editor de forma mas automatizado y mas.
+2. Instalar Plugin, lo que  nos permitira instalar los temas y mas plugin para dejar chulo nuetro editor. Una ves que ayan instaldo el script vuelte a este manual para seguir con la bases de la configuración.
 
 [Ir Link](https://github.com/junegunn/vim-plug) vim-plug
 
