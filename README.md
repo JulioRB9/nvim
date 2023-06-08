@@ -44,7 +44,7 @@ $ sudo apt-get install neovim
 
 [Ir Link](https://github.com/nodesource/distributions/blob/master/README.md#debinstall) NodeJr
 
-4. Procedemos clonar el este repositorio en el siguiente directorio de nuestro sistema linux, sigan esta indicaciones.
+4. Procedemos clonar este repositorio en el siguiente directorio de nuestro sistema linux, sigan esta indicaciones.
 
 ```bash
 $ cd ~/.confg/
@@ -58,3 +58,23 @@ linux@jr:~/.config/nvim$ tree
 ├── init.vim
 └── README.md
 ```
+5. Enlazar las carpetas donde contiene los archivos de configuracion de plugin  y el mapeo de nuestro mapeo de teclado fisico.
+
+```bash
+so ~/.vim/plugins.vim
+so ~/.vim/plugin-conf.vim
+so ~/.vim/map.vim
+```
+
+3. Habilitar las configuraciones de los plugins
+
+colorsheme gruvbox
+let g:gruvbox_contrast_dark = "hard"
+highlight Normal ctermbg=NONE
+set laststatus=2
+set noshowmode
+
+"" Searching 
+set hlsearch
+set incsearch
+set smartcase
