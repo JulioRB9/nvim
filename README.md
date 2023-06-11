@@ -32,7 +32,7 @@ sudo apt-get install software-properties-common
 ```
 ```bash
 $ sudo add-apt-repository ppa:neovim-ppa/stable
-$ sudo apt update
+$ sudo apt-get update
 $ sudo apt-get install neovim
 ```
 
@@ -66,7 +66,20 @@ linux@jr:~/.config/nvim$ tree -a
 
 35 directories, 54 files
 ```
-5. Enlazar las carpetas donde contiene los archivos de configuracion de plugin  y el mapeo de nuestro mapeo de teclado fisico.
+5. Enlazar las carpetas donde contiene los archivos de configuracion de plugin  y el mapeo de nuestro teclado fisico.
+
+En la carpeta contiene un archivo **.vimrc** el cual usaremos para crear el enlace simblolico, ojo tiene que sear de este archivo si vin se creo en automarico lo unico que tienes que hacer es eliminarlo y seguir el paso.
+
+Enlace simbolico .vimrc a **local home**
+```bash
+$ ln -s ~/.config/nvim/.vimrc ~/.vimrc
+```
+Ejemplo del resultado
+
+```bash
+jrb@HP:~$ ls -la
+lrwxrwxrwx  1 jrb  jrb     29 Jun 11 01:49  .vimrc -> /home/jrb/.config/nvim/.vimrc
+```
 
 ```bash
 so ~/.vim/plugins.vim
