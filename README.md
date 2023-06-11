@@ -66,15 +66,15 @@ linux@jr:~/.config/nvim$ tree -a
 
 35 directories, 54 files
 ```
-5. Enlazar las carpetas donde contiene los archivos de configuracion de plugin  y el mapeo de nuestro teclado fisico.
+5. Enlazar las carpetas donde contiene los archivos de configuracion como los plugin  y el mapeo de nuestro teclado fisico.
 
-En la carpeta contiene un archivo **.vimrc** el cual usaremos para crear el enlace simblolico, ojo tiene que sear de este archivo si vin se creo en automarico lo unico que tienes que hacer es eliminarlo y seguir el paso.
+En la carpeta contiene un archivo **.vimrc** el cual usaremos para crear el enlace simblolico, ojo tiene que ser de este archivo, si neovim lo creo en automarico lo unico que tienes que hacer es eliminarlo y seguir el paso.
 
-Enlace simbolico .vimrc a **local home**
+Enlace simbolico ".vimrc" a **local home**
 ```bash
 $ ln -s ~/.config/nvim/.vimrc ~/.vimrc
 ```
-Ejemplo del resultado
+Resultado del ejemplo
 
 ```bash
 jrb@HP:~$ ls -la
