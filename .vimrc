@@ -13,77 +13,21 @@ set sw=2
 set relativenumber
 set termguicolors
 
+" Enlazar carpeta
+so ~/.vim/plugins.vim
+so ~/.vim/plugin-config.vim
+so ~/.vim/maps.vim
 
-" 2. Enlazar las carpetas de Plugin y mapeo de teclado.
-call plug#begin('~/.vim/plugged')
-
-" Temas
-Plug 'morhetz/gruvbox'
-" IDE
-Plug 'easymotion/vim-easymotion'
-Plug 'scrooloose/nerdtree'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'vim-python/python-syntax'
-Plug 'ptzz/lf.vim'
-Plug 'rbgrouleff/bclose.vim'
-" -------------------------------------------------------------------------
-" Autocompletado
-" Use release branch (recommend)
-Plug 'neoclide/coc.nvim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-call plug#end()
-
-let g:airline_theme = "github"
-let g:lightline = { 'colorscheme': 'github' }
-"let g:indentLine_char = '┊'
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indentLine_color_tty_light = 7 " (default: 4)
-let g:indentLine_color_dark = 1 " (default: 2)
-" -------------------------------------------------------------------------
-" ================== colorscheme gruvbox =================================
+" Habilitar los temas
+colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
-let NERDTreeQuitOnOpen=1
-let mapleader=" "
-let g:python_highlight_all = 1
+highlight Normal ctermbg=NONE
+set laststatus=2
+set noshowmode
 
-" ------------------------------------------------------------------------
-" ================ SETTING  KITE   =====================
-" https://github.com/kiteco/vim-plugin
+"Searching
+set hlsearch
+set incsearch
+set ignorecase
+set  smartcase
 
-" Python, JavaScript, Go
-let g:kite_supported_languages = ['python', 'javascript']
-
-" -----------------------------------------------------------------------
-"  =============== SETTING COC =========================
-"
-autocmd FileType python let b:coc_suggest_disable = 1
-autocmd FileType javascript let b:coc_suggest_disable = 1 
-autocmd FileType scss setl iskeyword+=@-@
-
-
-"------------------------------------------------------------------------
-" ========= Navegation file ============================================
-nmap <Leader>s <Plug>(easymotion-s2)
-nmap <Leader>nt :NERDTreeFind<CR>
-
-"-----------------------------------------------------------------------
-" Atajos de guardado y salida
-nmap <Leader>w :w<CR>
-nmap <Leader>q :q<CR>
-
-" ---------------------------------------------------------------------
-"  ==================== ATAJO DE TECLADO COC   ========================
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-"  ---------------------------------------------------------------------
-"  ==================== CONDICION DE LOS AUTOCOMPLETADO ================
-" Us <c-space> to trigger completion.
-if &filetype == "javascript" || &filetype == "python"
-  inoremap <c-space> <C-x><C-u>
-else
-  inoremap <silent><expr> <c-space> coc#refresh()
-endif 
