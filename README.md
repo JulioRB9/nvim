@@ -9,7 +9,7 @@ La configuracion de Vim puede ser un poco frustrante en un inicio, pero despues 
 
 ## Pasos para instalar y configurar Vim y Neovim
 
-Estoy haciendo todo lo posible creando una documentacion paso a paso, que sea posible que cualquier novato pueda entender  que esta iniciando probar vim o neovim 
+Estoy haciendo todo lo posible creando una documentacion paso a paso, que sea posible que cualquier novato pueda entender  como funciona el editor. 
 
 ### Instruciones 
 1. Instalar vim y neovim en nuetro sistema linux
