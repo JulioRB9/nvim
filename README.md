@@ -93,4 +93,4 @@ $ ln -s ~/.config/nvim/.vim ~/.vim
 
 8. Llegamos al final del la configuracion, ahora puedes agregarle mas cosas o modificar la estructura, tu puedes hacer todo lo que quiereas con tu editor.
 
-> :memo: **Si al a primera no te sale, lo que te recomiendo es borrar todo y volver a repetir el paso, se paciente para que puedas llegar al objetivo.**
+> :memo: **Si a la primera no te sale, lo que te recomiendo es borrar todo y volver a repetir el paso, se paciente para que puedas llegar al objetivo.**
