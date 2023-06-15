@@ -68,7 +68,7 @@ linux@jr:~/.config/nvim$ tree -a
 ```
 5. Enlazar las carpetas donde contiene los archivos de configuracion como los plugin  y el mapeo de nuestro teclado fisico.
 
-En la carpeta contiene un archivo `**.vimrc**` el cual usaremos para crear el enlace simblolico, ojo tiene que ser de este archivo, si neovim lo creo en automarico lo unico que tienes que hacer es eliminarlo y seguir el paso.
+En la carpeta contiene un archivo `.vimrc` el que usaremos para crear enlace simbolico, ojo tiene que ser de este archivo, si neovim lo creo en automarico lo unico que tienes que hacer es eliminarlo y seguir el paso.
 
 Enlace simbolico `.vimrc` a  **local home**
 ```bash
@@ -87,7 +87,7 @@ Ahora crearemos el siguiente enlace simbolico de la carpeta `.vim`, donde esta l
 $ ln -s ~/.config/nvim/.vim ~/.vim
 ```
 
-6. Una ves realizado los enlace simbolico reiniciaremos el archivo `.vimrc` con el comando `source ~/.nvimrc` o cerrar y abrir la terminal para que aplique cambios.
+6. Una ves realizado los enlaces simbolicos reiniciaremos el archivo `.vimrc` con el comando `source ~/.nvimrc` o cerrar y abrir la terminal para que aplique cambios.
 
 7. Entrar al editor escribiendo en la terminal `nvim` y actulizar los plugin cargado en la configuracion con el comnado **shift + :** y escribir al campo `PlugUpdate` y enter.
 
