@@ -81,7 +81,7 @@ jrb@HP:~$ ls -la
 lrwxrwxrwx  1 jrb  jrb     29 Jun 11 01:49  .vimrc -> /home/jrb/.config/nvim/.vimrc
 ```
 Ahora crearemos el siguiente enlace simbolico de la carpeta `.vim`, donde esta las configuraciones necesarios para que vim y neovim funciones.
-> :memo: **Nota:** Si hay una carpeta `.vim` existente en nuetro sistema, lo unico debes hacer es eliminarlo o realizar una copia de seguridad caso que te llegue fallar poder dejarlo como estaba.
+> :memo: **Nota:** Si hay una carpeta `.vim` existente en nuetro sistema, lo unico que debes hacer es eliminarlo o realizar una copia de seguridad caso que te llegue fallar poder dejarlo como estaba.
 
 ```bash
 $ ln -s ~/.config/nvim/.vim ~/.vim
