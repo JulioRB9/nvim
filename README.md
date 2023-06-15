@@ -68,9 +68,9 @@ linux@jr:~/.config/nvim$ tree -a
 ```
 5. Enlazar las carpetas donde contiene los archivos de configuracion como los plugin  y el mapeo de nuestro teclado fisico.
 
-En la carpeta contiene un archivo **.vimrc** el cual usaremos para crear el enlace simblolico, ojo tiene que ser de este archivo, si neovim lo creo en automarico lo unico que tienes que hacer es eliminarlo y seguir el paso.
+En la carpeta contiene un archivo `**.vimrc**` el cual usaremos para crear el enlace simblolico, ojo tiene que ser de este archivo, si neovim lo creo en automarico lo unico que tienes que hacer es eliminarlo y seguir el paso.
 
-Enlace simbolico ".vimrc" a **local home**
+Enlace simbolico `.vimrc` a  **local home**
 ```bash
 $ ln -s ~/.config/nvim/.vimrc ~/.vimrc
 ```
@@ -80,22 +80,17 @@ Resultado del ejemplo
 jrb@HP:~$ ls -la
 lrwxrwxrwx  1 jrb  jrb     29 Jun 11 01:49  .vimrc -> /home/jrb/.config/nvim/.vimrc
 ```
+Ahora crearemos el siguiente enlace simbolico de la carpeta `.vim`, donde esta las configuraciones necesarios para que vim y neovim funciones.
+> :memo: **Nota:** Si hay una carpeta `.vim` existente en nuetro sistema, lo unico debes hacer es eliminarlo o realizar una copia de seguridad caso que te llegue fallar poder dejarlo como estaba.
 
 ```bash
-so ~/.vim/plugins.vim
-so ~/.vim/plugin-conf.vim
-so ~/.vim/map.vim
+$ ln -s ~/.config/nvim/.vim ~/.vim
 ```
 
-3. Habilitar las configuraciones de los plugins
+6. Una ves realizado los enlace simbolico reiniciaremos el archivo `.vimrc` con el comando `source ~/.nvimrc` o cerrar y abrir la terminal para que aplique cambios.
 
-colorsheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
-highlight Normal ctermbg=NONE
-set laststatus=2
-set noshowmode
+7. Entrar al editor escribiendo en la terminal `nvim` y actulizar los plugin cargado en la configuracion con el comnado **shift + :** y escribir al campo `PlugUpdate` y enter.
 
-"" Searching 
-set hlsearch
-set incsearch
-set smartcase
+8. Llegamos al final del la configuracion, ahora puedes agregarle mas cosas o modificar la estructura, tu puedes hacer todo lo que quiereas con tu editor.
+
+> :memo: **Si al a primera no te sale, lo que te recomiendo es borrar todo y volver a repetir el paso, se paciente para que puedas llegar el objetivo.**
