@@ -22,7 +22,6 @@ Plug 'turbio/bracey.vim'
 " Iconos
 
 
-
 " Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
@@ -37,4 +36,6 @@ Plug '~/my-prototype-plugin'
 Plug 'neoclide/coc.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Otros
+"Plugin 'spacevim/spacevim'
 call plug#end()

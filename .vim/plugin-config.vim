@@ -7,7 +7,7 @@ let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
 let g:NERDTreeGitStatusUntrackedFilesMode = 'all' " a heavy feature too. default: normal
-let g:NERDTreeGitStatusGitBinPath = '/your/file/path' " default: git (auto find in path)
+" let g:NERDTreeGitStatusGitBinPath = '/your/file/path' " default: git (auto find in path)
 
 " ============ Setting Airline-Theme ==============================
 let g:airline_theme='base16_gruvbox_dark_hard'      				" Temas para airline_theme
@@ -15,6 +15,9 @@ let g:airline_extensions = []
 
 " ========= Habilita fuente de powerline ==========================
 let g:airline_powerline_fonts = 1
+
+let g:GutterLineSign='->'
+let g:GutterLineIgnore=['help']
 
 " ============= Setting VimDevIcons ===============================
 let g:webdevicons_enable = 1					" loading the plugin
