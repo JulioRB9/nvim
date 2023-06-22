@@ -6,8 +6,6 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
  
-
-
 " IDE
 Plug 'easymotion/vim-easymotion' 
 Plug 'scrooloose/nerdtree'
@@ -16,6 +14,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'rbgrouleff/bclose.vim'
+
 
 " Server live brawer
 Plug 'turbio/bracey.vim'
