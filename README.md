@@ -86,7 +86,7 @@ Ahora crearemos el siguiente enlace simbolico de la carpeta `.vim`, donde esta l
 ln -s ~/.config/nvim/.vim ~/.vim
 ```
 
-6. Una ves realizado los enlaces simbolicos reiniciaremos el archivo `.vimrc` con el comando `source ~/.nvimrc` o cerrar y abrir la terminal para que se aplique cambios.
+6. Una ves realizado los enlaces simbolicos reiniciaremos el archivo `.vimrc` con el comando `source ~/.vimrc` o cerrar y abrir la terminal para que se aplique cambios.
 
 7. Entrar al editor escribiendo en la terminal `nvim` y actulizar los plugin cargado en la configuracion con el comnado **shift + :** y escribir al campo `PlugUpdate` y enter.
 
