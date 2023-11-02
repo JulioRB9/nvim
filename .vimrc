@@ -39,7 +39,7 @@ let g:airline_theme='simple'
 let g:airline#extensions#tabline#enable = 1
 
 
-set viminfo='10,<100,:100,%,n~/.vim/.viminfo
+"set viminfo='10,<100,:100,%,n~/.vim/.viminfo
 set laststatus=2
 set noshowmode
 set timeoutlen=4000
