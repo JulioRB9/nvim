@@ -47,7 +47,7 @@ $ sudo apt-get install neovim
 4. Procedemos clonar este repositorio al directorio de nuestro sistema linux, sigan la instruciones.
 
 ```bash
-git clone git@github.com:ISEATO-JR/nvim.git ~/.config/
+git clone git@github.com:ISEATO-JR/nvim.git ~/.config
 ```
 Ejemplo: 
 ```bash
