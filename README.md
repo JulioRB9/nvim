@@ -47,8 +47,7 @@ $ sudo apt-get install neovim
 4. Procedemos clonar este repositorio al directorio de nuestro sistema linux, sigan la instruciones.
 
 ```bash
-$ cd ~/.config/
-$ git clone git@github.com:ISEATO-JR/nvim.git
+git clone git@github.com:ISEATO-JR/nvim.git ~/.config/
 ```
 Ejemplo: 
 ```bash
@@ -72,7 +71,7 @@ En la carpeta contiene un archivo `.vimrc` el que usaremos para crear enlace sim
 
 Enlace simbolico `.vimrc` a  **local home**
 ```bash
-$ ln -s ~/.config/nvim/.vimrc ~/.vimrc
+ln -s ~/.config/nvim/.vimrc ~/.vimrc
 ```
 Resultado del ejemplo
 
@@ -84,7 +83,7 @@ Ahora crearemos el siguiente enlace simbolico de la carpeta `.vim`, donde esta l
 > :memo: **Nota:** Si hay una carpeta `.vim` existente en nuetro sistema, lo unico que debes hacer es eliminarlo o realizar una copia de seguridad caso que te llegue fallar poder dejarlo como estaba.
 
 ```bash
-$ ln -s ~/.config/nvim/.vim ~/.vim
+ln -s ~/.config/nvim/.vim ~/.vim
 ```
 
 6. Una ves realizado los enlaces simbolicos reiniciaremos el archivo `.vimrc` con el comando `source ~/.nvimrc` o cerrar y abrir la terminal para que se aplique cambios.
