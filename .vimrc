@@ -14,7 +14,7 @@ set showmatch
 set sw=2
 set relativenumber
 set termguicolors
-
+set guifont=DroidSansMono\ Nerd\ Font\ 12
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
