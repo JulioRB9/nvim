@@ -17,11 +17,24 @@ let g:airline_extensions = []
 let g:airline_powerline_fonts = 1
 let g:GutterLineSign='->'
 let g:GutterLineIgnore=['help']
+let g:buffet_use_devicons = 1
 
 " ============= Setting VimDevIcons ===============================
-let g:WebDevIconsOS = 'Darwin'
+let g:WebDevIconsOS = 'Linux'
 let g:webdevicons_enable = 1
 let g:airline_powerline_fonts=1
+" adding the custom source to unite
+let g:webdevicons_enable_unite = 1
+" adding the column to vimfiler
+let g:webdevicons_enable_vimfiler = 1
+" adding to vim-airline's tabline
+let g:webdevicons_enable_airline_tabline = 1
+" ctrlp glyphs
+let g:webdevicons_enable_ctrlp = 1
+" adding to vim-startify screen
+let g:webdevicons_enable_startify = 1
+" change the default character when no match found
+let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = 'ƛ'
 
 
 "=========OPENING LF INSTEAD OF NETRW WHEN YOU OPEN A DIRECTORY ===============

@@ -7,9 +7,10 @@ Plug 'morhetz/gruvbox'
 " Icons y Colors
 
 Plug 'ryanoasis/vim-webdevicons'
+Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
- 
+Plug 'bagrat/vim-buffet' 
 " IDE
 Plug 'easymotion/vim-easymotion' 
 Plug 'scrooloose/nerdtree'

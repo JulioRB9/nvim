@@ -1,4 +1,6 @@
+
 " 1. Habilitar funciones de Vim, ya que por default esta deshabilitado.
+set encoding=UTF-8
 set number
 set mouse=a
 set autoindent
@@ -14,8 +16,8 @@ set showmatch
 set sw=2
 set relativenumber
 set termguicolors
-set guifont=DroidSansMono\ Nerd\ Font\ 12
-
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+# set guifont=DroidSansMono\ Nerd\ Font\ 11
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -37,7 +39,6 @@ let g:gruvbox_contrast_dark = "hard"
 colorscheme gruvbox
 let g:airline_theme='simple'
 let g:airline#extensions#tabline#enable = 1
-
 
 "set viminfo='10,<100,:100,%,n~/.vim/.viminfo
 set laststatus=2
