@@ -17,12 +17,19 @@ set sw=2
 set relativenumber
 set termguicolors
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
-# set guifont=DroidSansMono\ Nerd\ Font\ 11
+" set guifont=DroidSansMono\ Nerd\ Font\ 11
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
+" testing rounded separators (extra-powerline-symbols):
+let g:airline_left_sep = "\uE0B4"
+let g:airline_right_sep = "\uE0B6"
+
+" set the CN (column number) symbol:
+"let g:airline_section_z = airline#section#create(["\uE0A1" . '%{line(".")}' . "\uE0A3" . '%{col(".")}'])
 
 " Enlazar carpeta
 so ~/.vim/plugins.vim
