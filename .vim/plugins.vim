@@ -19,7 +19,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'rbgrouleff/bclose.vim'
-
+Plug 'christoomey/vim-tmux-navigator'
 
 " Server live brawer
 Plug 'turbio/bracey.vim'
