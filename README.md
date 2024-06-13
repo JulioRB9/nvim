@@ -42,7 +42,8 @@ $ sudo apt-get install neovim
 
 3. Instalar NedoJs, seguir las instrucciones de la pagina oficial, despues vuelven a este instrucion para seguir con el siguiente paso
 
-[Ir Link](https://github.com/nodesource/distributions/blob/master/OLD_README.md#debinstall) NodeJr
+[Ir Link](https://github.com/nodesource/distributions/blob/master/OLD_README.md#debinstall) NodeJr -> OLD README
+[New Link](https://nodejs.org/en/download/package-manager/current) NodeJr 
 
 4. Procedemos clonar este repositorio al directorio de nuestro sistema linux, sigan la instruciones.
 
